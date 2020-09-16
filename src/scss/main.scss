@@ -3,7 +3,18 @@
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
+:root{
+  --font-principale: 'Cardo', serif;
+  --font-secondaire: 'Bungee Shade', cursive;
 
+  --black: #000;
+  --white: #fff;
+  --couleur-principale: #a7029a;
+  --couleur-secondaire: darkgray;
+
+  --degrade-principale: linear-gradient(36deg, rgba(167,2,154, 5));
+
+}
 
 
 // SETTINGS
@@ -21,6 +32,13 @@
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
 
+.hero{
+  height: 88vh;
+}
+
+.hero p, .hero a{
+  font-size: 24px;
+}
 
 
 // COMPONENTS
