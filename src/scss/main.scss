@@ -1,88 +1,38 @@
-
-
-
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
-:root{
-  --font-principale: 'Cardo', serif;
-  --font-secondaire: 'Bungee Shade', cursive;
 
-  --black: #000;
-  --white: #fff;
-  --couleur-principale: #a7029a;
-  --couleur-secondaire: darkgray;
-
-  --degrade-principale: linear-gradient(36deg, rgba(167,2,154,0.7) 0%, rgba(167,2,154,0) 100%);
-
-}
 
 
 // SETTINGS
 // Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
-
+@import "settings/root";
 
 
 
 // GENERIC
 // Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
-
+@import "normalize";
+@import "generic/reset";
 
 
 
 // ELEMENTS
 // Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
-
-.hero{
-  height: 88vh;
-  background-color: var(--black);
-}
-
-.hero video{
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  opacity: 0.5;
-}
-
-.hero .content{
-  width: 100%;
-  height: 100%;
-
-  color: var(--white);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background: var(--degrade-principale);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.hero::after{
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.hero p, .hero a{
-  font-size: 24px;
-}
+@import "elements/body";
+@import "elements/headings";
+@import "elements/links";
 
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
-
+@import "components/carte";
+@import "components/citation";
+@import "components/footer";
+@import "components/header";
+@import "components/hero";
+@import "components/interet";
+@import "components/wrapper";
 
 
 

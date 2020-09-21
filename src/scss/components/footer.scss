@@ -1,0 +1,23 @@
+.footer-principal{
+  background: var(--couleur-noir);
+
+
+ p{
+
+   color: var(--couleur-blanc);
+  margin: 0;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.footer-principal a{
+  color: var(--couleur-blanc);
+}
+
+.footer-principal a:hover{
+  color: #A7029A;
+  text-decoration: underline;
+}
+
+
+}
